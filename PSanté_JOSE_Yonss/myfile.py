@@ -204,7 +204,12 @@ def histograme_plot(df, varname,valuevar,place,tcolors):
     g=sns.histplot(data=df[df[varname]==valuevar],color=tcolors,kde=True,ax=place)
     g.set( ylabel = valuevar)
     
-def boxplot_plot(df, varname,xx,yy,valuevar,place,linewidthy,xlabell):
-    gfg = sns.boxplot(x=xx, y=yy, data=df[df[varname]==valuevar],ax=place,linewidth=linewidthy)
-    gfg.set(xlabel = xlabell, ylabel = valuevar)
-    
+def boxplot_plot(df, varname,xx,yy,valuevar,place,linewidthy,xlabell,miny,maxy,melt):
+    if melt==1:
+        gfg = sns.boxplot(x=xx, y=yy, data=df[df[varname]==valuevar],ax=place,linewidth=linewidthy)
+        gfg.set(xlabel = xlabell, ylabel = valuevar)
+    else:
+        gfg = sns.boxplot(x=xx, y=yy, data=df,ax=place,linewidth=linewidthy)
+        gfg.set(xlabel = xlabell, ylabel = valuevar)
+        gfg.set(ylim=(miny, maxy))
+        
