@@ -208,8 +208,10 @@ def boxplot_plot(df, varname,xx,yy,valuevar,place,linewidthy,xlabell,miny,maxy,m
     if melt==1:
         gfg = sns.boxplot(x=xx, y=yy, data=df[df[varname]==valuevar],ax=place,linewidth=linewidthy)
         gfg.set(xlabel = xlabell, ylabel = valuevar)
+        plt.rcParams['font.size'] = '18'
     else:
         gfg = sns.boxplot(x=xx, y=yy, data=df,ax=place,linewidth=linewidthy)
         gfg.set(xlabel = xlabell, ylabel = valuevar)
         gfg.set(ylim=(miny, maxy))
+        plt.rcParams['font.size'] = '18'
         
