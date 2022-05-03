@@ -11,7 +11,8 @@ A. Construire un modèle de scoring
     1- Traitement des valeurs manquantes et des valeurs aberrantes, encodage des variables catégorielles et ingénierie des données (pretraitement.ipynb)
     2- Optimisation des hyper-paramètres, chix de métrique métier, sélection du meilleur modèle, ainsi que l'analyse des résultats (modelling.ipynb)
 
-  Les données utilmisé sont telechargeables sur https://www.kaggle.com/c/home-credit-default-risk/data
+  Les données utilmisé sont telechargeables sur https://www.kaggle.com/c/home-credit-default-risk/data. La stratégie de modélisation utilisée dans ce travail comprend le test de différents schémas de
+  préparation des données, de différents algorithmes d'apprentissage et de différents hyperparamètres pour les algorithmes d'apprentissage (voir les pdf pour plus de detaille)
   
 B. Construire un dashboard interactif et une API
  - à destination des gestionnaires de la relation client, ce dashboard permettra d'interpréter les prédictions faites par le modèle, et d’améliorer la connaissance
