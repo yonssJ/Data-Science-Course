@@ -1,14 +1,11 @@
 Projet n°7 : "Implémentez un modèle de scoring"
 
 Objectif principal:
-
-A. Construire un modèle de scoring - qui donnera une prédiction sur la probabilité de faillite d'un client de façon automatique.
-
-B. Construire un dashboard interactif - à destination des gestionnaires de la relation client, ce dashboard permettra d'interpréter les prédictions faites par le modèle, et d’améliorer la connaissance
-client des chargés de relation client
-
+A. Construire un modèle de scoring 
+B. Construire un dashboard interactif
 
 A. Construire un modèle de scoring
+- qui donnera une prédiction sur la probabilité de faillite d'un client de façon automatique.
 
   Cela se fait en 2 partie:
     1- Traitement des valeurs manquantes et des valeurs aberrantes, encodage des variables catégorielles et ingénierie des données (pretraitement.ipynb)
@@ -16,9 +13,12 @@ A. Construire un modèle de scoring
 
   Les données utilmisé sont telechargeables sur https://www.kaggle.com/c/home-credit-default-risk/data
   
-B. Construire un dashboard interactif
-  1. Mise en place d'une API Flask pour appeler le modèle de prédiction sur herouku
-  2. Déploiement d'un dashboard créé avec Plotly Dash sur Heroku (
+B. Construire un dashboard interactif et une API
+ - à destination des gestionnaires de la relation client, ce dashboard permettra d'interpréter les prédictions faites par le modèle, et d’améliorer la connaissance
+   client des chargés de relation client
+
+  1. Mise en place d'une API Flask pour appeler le modèle de prédiction sur herouku (https://p7modelescoringapi.herokuapp.com/, dossier p7modelescoringapi )
+  2. Déploiement d'un dashboard créé avec Plotly Dash sur Heroku (https://p7modelescoring.herokuapp.com/, dossier p7modelescoring )
   
 
 
