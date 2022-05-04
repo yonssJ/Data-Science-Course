@@ -1,0 +1,5 @@
+Choose a Client <SELECT name="client">
+    {% for c in clientList %}
+        <OPTION value={{c.client_id}}>{{c.client_name}}</option>
+    {% endfor %}
+    </SELECT>
