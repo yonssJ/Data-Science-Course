@@ -2,6 +2,7 @@ from model_prediction import prediction
 from read_clientdata import avail_client
 from flask import Flask, request,render_template,redirect, url_for
 import pandas as pd
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -20,7 +21,7 @@ def personalpage(name):
     else:
             polarity= " Accordé "
             
-    return render_template("personalpage.html",name=name,polarity=polarity)
+    return jsonify(polarity) #render_template("personalpage.html",name=name,polarity=polarity)
 
 @app.route('/Unknownclient/<name>')
 def Unknownclient(name):
