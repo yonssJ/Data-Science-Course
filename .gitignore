@@ -3,6 +3,7 @@
 *.pyc
 *.swp
 **/venv
+**/data
 **/__pycache_
 *Untitled1.ipynb_
 **/PSant\303\251_JOSE_Yonss/.ipynb_checkpoints
